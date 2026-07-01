@@ -1,5 +1,5 @@
 const navToggle=document.querySelector('.nav-toggle');const navLinks=document.querySelector('.nav-links');if(navToggle){navToggle.addEventListener('click',()=>navLinks.classList.toggle('open'))}function showToast(message){const toast=document.getElementById('toast');if(!toast)return;toast.textContent=message;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),3500)}
-function startPayment(courseSlug, courseTitle, amount, publicKey){const name=document.getElementById('buyer_name')?.value?.trim();const email=document.getElementById('buyer_email')?.value?.trim();if(!name||!email){showToast('Please enter your name and email first.');return}window.location.href='https://checkout.korapay.com/pay/MPcARPg1fNzLMbG';}
+function startPayment(courseSlug, courseTitle, amount, publicKey){const name=document.getElementById('buyer_name')?.value?.trim();const email=document.getElementById('buyer_email')?.value?.trim();if(!name||!email){showToast('Please enter your name and email first.');return}window.location.href='https://pay.nomba.com/pay/5680593721';}
 (function(){
   const images=document.querySelectorAll('.js-lightbox');
   if(!images.length)return;
